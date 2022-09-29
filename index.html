@@ -13,8 +13,8 @@
       <a class="logo">Ayush</a>
       <nav class="nav_bar">
         <a class="nav_bar_element" href="#home_screen">Home</a>
-        <a class="nav_bar_element">Experience</a>
-        <a class="nav_bar_element">About</a>
+        <a class="nav_bar_element" href="#exp">Experience</a>
+        <a class="nav_bar_element" href="#about">About</a>
         <a class="nav_bar_element">Projects</a>
       </nav>
       <a class="chat_button"> Let's Chat </a>
@@ -41,8 +41,9 @@
           </div>
         </div>
       </div>
-      <div class="home_screen_section2">
-        <div class="Home" id="home_screen">
+
+      <div class="home_screen_section2" id="home_screen">
+        <div class="Home sized-box">
           <p class="ad">
             Create your <strong>Website</strong> with us and
             <strong>Publish</strong> you Business Now
@@ -102,8 +103,40 @@
             </div>
           </div>
         </div>
-        <div>
-          
+      </div>
+      <div class="experience sized-box" id="exp">
+        <h2 class="experience_heading">My Experience</h2>
+        <div class="AppSynergies">
+          <img
+            class="mingle"
+            src="data:image/png;base64,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"
+          />
+          <p class="exp_text">
+            I am Working in a Saas based start-up AppSynergies as a
+            <strong>Flutter Developer Intern</strong>. We are working on a App
+            called <strong>MingleWise</strong> which is a dating and event
+            organiser app with almost <strong>75 thousands Downloads</strong>
+            and 2.5 thousands 5 star reviews on Playstore.
+          </p>
+        </div>
+      </div>
+      <div class="About sized-box" id="about">
+        <h1 class="head_about">About Me</h1>
+        <div class="text_about">
+          <p class="pa">
+            I am <strong>Ayush Raghuwanshi</strong>, an Aspriring Developer. I
+            am currently pursuing my <strong>BTech</strong> from Ajay Kumar Garg
+            Engineering College, Ghaziabad, in IT Branch. My current agregate
+            CGPA is 8.2.
+          </p>
+          <p class="pa">
+            My aspiration is to build app which becomes a daily part of peoples
+            life and help them in living a better life.
+          </p>
+          <p class="pa">I am from Ghaziabad, Uttar Pradesh.</p>
+          <p class="pa">
+            <strong>My Hobbies include:</strong> Gaming, Watching Anime.
+          </p>
         </div>
       </div>
     </div>

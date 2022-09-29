@@ -3,6 +3,10 @@ body {
   padding: 0px;
   background-color: rgba(222, 184, 135, 0.644);
 }
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
 .Top_bar {
   display: flex;
   flex-direction: row;
@@ -42,11 +46,15 @@ a:active {
   cursor: pointer;
 }
 .home_screen {
+  height: 100vh;
+  padding-top: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
 }
 .home_screen_section1 {
   position: fixed;
+
   padding-top: 50px;
   box-shadow: 10px 0px 5px 0px rgba(0, 0, 0, 0.18);
   height: 95vh;
@@ -55,16 +63,15 @@ a:active {
   z-index: 1;
 }
 .home_screen_section2 {
+  scroll-behavior: smooth;
   grid-column-start: 2;
- 
-
   padding-top: 50px;
   left: 500px;
   z-index: 0;
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
 }
 .developer {
   margin: 40px 0px 0px 40px;
@@ -182,4 +189,60 @@ a:active {
   font-size: 40px;
   text-align: center;
   padding: 20px;
+}
+.experience {
+  grid-column-start: 2;
+
+  scroll-snap-align: start;
+  height: 100vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+.experience_heading {
+  font-size: 40px;
+}
+.sized-box {
+  padding-top: 50px;
+  grid-column-start: 2;
+  scroll-snap-align: start;
+  height: 100vh;
+}
+.Home {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+.AppSynergies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mingle {
+  height: auto;
+  width: 340px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: white;
+}
+.exp_text {
+  padding: 40px;
+  text-align: center;
+  font-size: 30px;
+}
+.About {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.head_about {
+  padding: 20px;
+}
+.text_about {
+  padding: 40px;
+  text-align: center;
+  font-size: 25px;
 }
