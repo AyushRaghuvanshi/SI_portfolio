@@ -1,6 +1,7 @@
 body {
   margin: 0px;
   padding: 0px;
+  background-color: rgba(222, 184, 135, 0.644);
 }
 .Top_bar {
   display: flex;
@@ -45,19 +46,25 @@ a:active {
   grid-template-columns: 1fr 1fr;
 }
 .home_screen_section1 {
+  position: fixed;
   padding-top: 50px;
   box-shadow: 10px 0px 5px 0px rgba(0, 0, 0, 0.18);
   height: 95vh;
+  width: 50vw;
+  background-color: white;
   z-index: 1;
 }
 .home_screen_section2 {
-  background-color: rgba(222, 184, 135, 0.644);
-  height: 95vh;
+  grid-column-start: 2;
+ 
+
   padding-top: 50px;
+  left: 500px;
   z-index: 0;
   display: flex;
   flex-direction: column;
   justify-content: end;
+  align-items: flex-end;
 }
 .developer {
   margin: 40px 0px 0px 40px;
@@ -170,4 +177,9 @@ a:active {
 }
 .triangle {
   padding-bottom: 30px;
+}
+.ad {
+  font-size: 40px;
+  text-align: center;
+  padding: 20px;
 }
