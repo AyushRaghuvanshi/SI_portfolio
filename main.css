@@ -7,6 +7,11 @@ body {
   flex-direction: row;
   justify-content: space-around;
   border-bottom: 1px solid grey;
+  box-shadow: 0px 0px 10px 0px black;
+  z-index: 2;
+  position: fixed;
+  width: 100vw;
+  background-color: white;
 }
 .nav_bar {
   display: flex;
@@ -40,13 +45,19 @@ a:active {
   grid-template-columns: 1fr 1fr;
 }
 .home_screen_section1 {
+  padding-top: 50px;
   box-shadow: 10px 0px 5px 0px rgba(0, 0, 0, 0.18);
-  height: 90vh;
+  height: 95vh;
   z-index: 1;
 }
 .home_screen_section2 {
   background-color: rgba(222, 184, 135, 0.644);
-  height: 90vh;
+  height: 95vh;
+  padding-top: 50px;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
 .developer {
   margin: 40px 0px 0px 40px;
@@ -95,6 +106,68 @@ a:active {
   text-decoration: none;
   border: 0px solid rgba(255, 68, 0, 0.966);
 }
-.hire_me:hover{
+.hire_me:hover {
   color: white;
+}
+.project_button {
+  padding-left: 30px;
+  font-weight: 700;
+}
+.arrow_project {
+  position: relative;
+  padding-left: 5px;
+  top: 5px;
+  height: 20px;
+  width: 20px;
+}
+.email {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0px;
+}
+.contact {
+  margin-block-end: 10px;
+  font-size: 30px;
+  margin-top: 30px;
+  font-weight: 800;
+}
+.contact_info {
+  padding-top: 30px;
+}
+.techstack_img {
+  height: 50px;
+  width: 50px;
+}
+.techstackcircle {
+  background-color: white;
+  position: relative;
+  border: 2px solid black;
+  margin: 10px;
+  border-radius: 50px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.line1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.line2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.line3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+}
+.triangle {
+  padding-bottom: 30px;
 }
