@@ -362,7 +362,6 @@ input {
     width: 100%;
     position: static;
     height: 100vh;
-    scroll-snap-align: start;
   }
   .experience {
     width: 100vw;
@@ -377,5 +376,8 @@ input {
   }
   .home_screen {
     width: 100%;
+  }
+  html {
+    scroll-snap-type: none;
   }
 }
