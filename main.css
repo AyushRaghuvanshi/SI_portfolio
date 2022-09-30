@@ -1,5 +1,6 @@
 body {
   margin: 0px;
+  overflow-x: hidden;
   padding: 0px;
   background-color: rgba(222, 184, 135, 0.644);
 }
@@ -35,8 +36,10 @@ a:active {
   text-decoration: none;
   font-weight: 600;
 }
-.logo {
+.logo_c {
   padding: 20px;
+  font-size: 24px;
+  font-family: "Dancing Script";
 }
 .chat_button {
   font-weight: 600;
@@ -50,7 +53,6 @@ a:active {
   padding-top: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto auto auto;
 }
 .home_screen_section1 {
   position: fixed;
@@ -79,6 +81,7 @@ a:active {
   padding: 10px;
   color: white;
   display: flex;
+  font-family: "Indie Flower";
   justify-content: center;
   align-items: center;
   flex-direction: row;
@@ -98,11 +101,13 @@ a:active {
 }
 .hi {
   font-size: 60px;
+  font-family: "Indie Flower";
 }
 .name {
+  font-family: "Indie Flower";
   font-size: 60px;
   padding: 0;
-  margin: 0;
+  margin: -20px;
 }
 .tagline {
   padding: 20px 0px 10px 0px;
@@ -120,9 +125,7 @@ a:active {
   text-decoration: none;
   border: 0px solid rgba(255, 68, 0, 0.966);
 }
-.hire_me:hover {
-  color: white;
-}
+
 .project_button {
   padding-left: 30px;
   font-weight: 700;
@@ -245,4 +248,84 @@ a:active {
   padding: 40px;
   text-align: center;
   font-size: 25px;
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.proj {
+  padding-top: 30px;
+}
+.proj_window {
+  height: 480px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  width: 600px;
+}
+.proj1 {
+  scroll-snap-align: center;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.akgec {
+  height: 300px;
+  width: auto;
+}
+.proj1head {
+  padding: 30px;
+  font-weight: 600;
+  font-size: 30px;
+}
+.contac {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.contact_head {
+  padding: 30px;
+}
+.links {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 30px;
+}
+@media (max-width: 600px) {
+  .home_screen {
+    grid-template-columns: 1fr;
+  }
+  .home_screen_section2 {
+    display: none;
+  }
+  .home_screen_section1 {
+    box-shadow: 0px;
+    margin-right: -100px;
+    width: 100%;
+    position: static;
+    height: 100vh;
+    scroll-snap-align: start;
+  }
+  .experience {
+    width: 100vh;
+  }
+  .Top_bar {
+    width: 100%;
+  }
+  .sized-box {
+    grid-column-start: 1;
+    width: 100%;
+  }
+  .home_screen {
+    width: 100%;
+  }
 }

@@ -4,20 +4,26 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>My Portfolio</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&family=Inter+Tight&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
   </head>
-  <body>
+  <body style="font-family: Inter Tight">
     <div class="Top_bar">
-      <a class="logo">Ayush</a>
+      <a class="logo_c">Ayush</a>
       <nav class="nav_bar">
         <a class="nav_bar_element" href="#home_screen">Home</a>
         <a class="nav_bar_element" href="#exp">Experience</a>
         <a class="nav_bar_element" href="#about">About</a>
-        <a class="nav_bar_element">Projects</a>
+        <a class="nav_bar_element" href="#project">Projects</a>
       </nav>
-      <a class="chat_button"> Let's Chat </a>
+      <a class="chat_button" href="#contact"> Let's Chat </a>
     </div>
     <div class="home_screen">
       <div class="home_screen_section1">
@@ -31,8 +37,8 @@
             Developing Applications for around <strong>6 months</strong> as an
             <strong>App Developer</strong> and <strong>Web Developer</strong>.
           </p>
-          <a class="hire_me"> Hire me </a>
-          <a class="project_button">
+          <a class="hire_me" style="color: white" href="#contact"> Hire me </a>
+          <a class="project_button" href="#project">
             Projects<img class="arrow_project" src="./Assets/arrow.png"
           /></a>
           <div class="contact_info">
@@ -138,6 +144,56 @@
             <strong>My Hobbies include:</strong> Gaming, Watching Anime.
           </p>
         </div>
+      </div>
+      <div class="project sized-box" id="project">
+        <h1 class="proj">My Projects</h1>
+        <div class="proj_window">
+          <div class="proj1">
+            <img class="akgec" src="./Assets/projects/flutter.png" alt="" />
+            <a href="" target="_blank" class="proj1head"> AKGEC Connect</a>
+          </div>
+          <div class="proj1">
+            <img class="akgec" src="./Assets/projects/quiz.png" />
+            <a href="" target="_blank" class="proj1head">Quiz App</a>
+          </div>
+          <div class="proj1">
+            <img class="akgec" src="./Assets/projects/tributePage.png" />
+            <a href="" target="_blank" class="proj1head">Tribute Page</a>
+          </div>
+        </div>
+      </div>
+      <div class="contac sized-box" id="contact">
+        <h1 class="contact_head">Contact Me</h1>
+        <a
+          class="links"
+          target="_blank"
+          href="https://www.instagram.com/ayushrag03/"
+          >Instagram</a
+        >
+        <a
+          class="links"
+          target="_blank"
+          href="https://www.linkedin.com/in/ayush-raghuwanshi-240bb7217/"
+          >LinkedIn</a
+        >
+        <a
+          class="links"
+          target="_blank"
+          href="https://ayushraghuwanshi.hashnode.dev/"
+          >Blog</a
+        >
+        <a
+          class="links"
+          target="_blank"
+          href="https://github.com/AyushRaghuvanshi"
+          >GitHub</a
+        >
+        <a
+          class="links"
+          target="_blank"
+          href="mailto:ayushraghuvanshi03@gmail.com"
+          >Mail</a
+        >
       </div>
     </div>
   </body>
