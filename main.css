@@ -1,4 +1,6 @@
 body {
+  width: 100vw;
+  height: 100vh;
   margin: 0px;
   overflow-x: hidden;
   padding: 0px;
@@ -300,12 +302,59 @@ a:active {
   font-weight: 700;
   padding: 30px;
 }
-@media (max-width: 600px) {
+.menu {
+  display: none;
+}
+input {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .first_line {
+    width: 100%;
+  }
+  .pa {
+    width: 80vw;
+    font-size: 24px;
+  }
+
+  .exp_text {
+    font-size: 24px;
+    width: 80vw;
+  }
+  .name {
+    width: 70vw;
+  }
+  .contact_info {
+    display: none;
+  }
+  .tagline {
+    width: 80vw;
+  }
+  .nav_bar {
+    display: none;
+  }
+  .chat_button {
+    display: none;
+  }
   .home_screen {
     grid-template-columns: 1fr;
   }
   .home_screen_section2 {
     display: none;
+  }
+  input {
+    display: block;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    opacity: 5;
+  }
+  input:checked ~ .menu {
+    display: flex;
+    flex-direction: column;
   }
   .home_screen_section1 {
     box-shadow: 0px;
@@ -316,9 +365,10 @@ a:active {
     scroll-snap-align: start;
   }
   .experience {
-    width: 100vh;
+    width: 100vw;
   }
   .Top_bar {
+    justify-content: space-between;
     width: 100%;
   }
   .sized-box {
